@@ -7,7 +7,7 @@
 
 vector<Row> FileLoader::readFile() {
 
-	ifstream file("krkopt.csv", ios::in);
+	ifstream file("krkopt2.csv", ios::in);
 	string line;
 	vector<Row> rows;
 

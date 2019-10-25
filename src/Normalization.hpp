@@ -1,10 +1,11 @@
 #pragma once
 #include "Row.hpp"
 #include "omp.h"
+#include "KNNRow.hpp"
 
 class Normalization {
 private:
-	vector<Row> normalizedData;
+	vector<KNNRow> normalizedData;
 	vector<Row> inData;
 	double normalizationTime;
 	double minMaxTime;
@@ -18,5 +19,5 @@ public:
 	void normalize(int argc, char *argv[]);
 	void findMinMax(int argc, char *argv[]);
 	double getMinMaxTime();
-	vector<Row> getNormalizedData();
+	vector<KNNRow> getNormalizedData();
 };

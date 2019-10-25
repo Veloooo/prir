@@ -9,8 +9,8 @@ public:
 	vector<KNNRow> testSet;
 	double knnTime;
 	double accuracy;
-	void knn(vector<Row> rows, int argc , char * argv []);
-	void splitData(vector<Row> allData);
+	void knn(vector<KNNRow> rows, int argc , char * argv []);
+	void splitData(vector<KNNRow> allData);
 	int calcPrediction(KNNRow testVal, int K);
 	int testSize;
 	int trainSize;

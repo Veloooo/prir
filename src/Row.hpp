@@ -7,6 +7,8 @@
 #define NUM_OF_FEATURES 6
 # define MTAG1 1
 # define MTAG2 2
+# define MTAG3 3
+# define MTAG4 4
 
 using namespace std;
 
@@ -20,6 +22,7 @@ public:
 			features(m_features), category(m_category) {
 	}
 	;
+	Row(){};
 };
 
 struct CompareRows {
